@@ -1,0 +1,148 @@
+@import-normalize; /* bring in normalize.css styles */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+  background-color: #00205b;
+}
+
+ul {
+  padding-left: 30px;
+}
+
+li {
+  list-style: none;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: relative;
+  width: 92vw;
+  max-width: 900px;
+  height: 92vh;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px 2px #adabab;
+}
+
+.search-area {
+  padding: 10px;
+}
+
+.search-input {
+  margin-bottom: 10px;
+  width: 100%;
+  font-size: 18px;
+  border: none;
+  color: rgb(109, 106, 106);
+  border-bottom: 1px solid gainsboro;
+  line-height: 2em;
+  background-color: white;
+}
+
+.players {
+  overflow: scroll;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.players::-webkit-scrollbar {
+  display: none;
+}
+
+.player {
+  display: flex;
+  position: relative;
+
+  flex-wrap: wrap;
+  border-bottom: 1px solid gainsboro;
+  padding: 20px;
+}
+
+.player--info {
+  line-height: 1.5;
+}
+
+.player--avatar {
+  width: 125px;
+  height: 125px;
+  margin: 15px;
+  margin-right: 40px;
+}
+
+.player--avatar img {
+  border: 1px solid gainsboro;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.player--info h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.tag-input {
+  margin-left: 30px;
+  border: none;
+  color: rgb(109, 106, 106);
+  border-bottom: 1px solid gainsboro;
+  line-height: 1.5em;
+  font-size: 1rem;
+  padding-top: 20px;
+}
+
+.tags li {
+  display: inline-block;
+  background-color: gainsboro;
+  padding: 6px 8px;
+  margin: 3px;
+  border-radius: 4px;
+}
+
+.search-input:focus,
+.tag-input:focus {
+  outline: none;
+  border: none;
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.toggleStats {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 30px;
+  color: rgb(201, 196, 196);
+}
+
+.toggleStats:hover {
+  color: black;
+}
+
+.toggleStats:focus {
+  outline: none;
+}

@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/leafs_rolodex/static/css/main.e4e5a1a0.css",
+    "main.js": "/leafs_rolodex/static/js/main.72b1e9a6.js",
+    "index.html": "/leafs_rolodex/index.html",
+    "main.e4e5a1a0.css.map": "/leafs_rolodex/static/css/main.e4e5a1a0.css.map",
+    "main.72b1e9a6.js.map": "/leafs_rolodex/static/js/main.72b1e9a6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4e5a1a0.css",
+    "static/js/main.72b1e9a6.js"
+  ]
+}

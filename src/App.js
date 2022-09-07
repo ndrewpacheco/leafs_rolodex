@@ -11,7 +11,7 @@ function App() {
   const [tagData, setTagData] = useState({});
 
   // fetch team roster data
-  const teamId = "10";
+  const teamId = "10"; // Toronto Maple Leafs ID
   const teamRosterLink = `https://statsapi.web.nhl.com/api/v1/teams/${teamId}?expand=team%2Eroster`;
 
   useEffect(() => {

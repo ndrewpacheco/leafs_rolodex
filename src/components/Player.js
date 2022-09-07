@@ -7,6 +7,7 @@ const Player = ({ id, position, handleTag, tags }) => {
   const [player, setPlayer] = useState([]);
   const [stats, setStats] = useState({});
   const playerUrl = `https://statsapi.web.nhl.com/api/v1/people/${id}?expand=person.stats&stats=careerRegularSeason&expand=stats.team&site=en_nhlCA`;
+
   useEffect(() => {
     fetch(playerUrl)
       .then((res) => res.json())

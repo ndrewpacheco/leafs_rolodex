@@ -21,9 +21,3 @@ const Avatar = ({ id, fullName }) => {
 };
 
 export default Avatar;
-
-// <img src="imagenotfound.gif" alt="Image not found" onerror="this.onerror=null;this.src='https://www.flickr.com/photos/195527271@N04/52340120977/in/dateposted-public/';" />
-
-/* <a data-flickr-embed="true" href="https://www.flickr.com/photos/195527271@N04/52340120977/in/dateposted-public/" title="default_avatar"><img src="https://live.staticflickr.com/65535/52340120977_f154705256_m.jpg" width="240" height="240" alt="default_avatar"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script> */
-
-// onerror="myFunction()"

@@ -10,16 +10,20 @@ function App() {
   const [searchInputs, setSearchInputs] = useState({ name: "", tag: "" });
   const [tagData, setTagData] = useState({});
 
+  // fetch team roster data
+  const teamId = "10";
+  const teamRosterLink = `https://statsapi.web.nhl.com/api/v1/teams/${teamId}?expand=team%2Eroster`;
+
   useEffect(() => {
-    fetch("https://statsapi.web.nhl.com/api/v1/teams/10?expand=team%2Eroster")
+    fetch(teamRosterLink)
       .then((res) => res.json())
       .then((data) => setPlayers(data.teams[0].roster.roster))
       .catch((error) => {
         console.error("Error:", error);
       });
-  }, []);
+  }, [teamRosterLink]);
 
-  // handle tag input
+  // Handle tag input
   const handleTag = (playerId, tag) => {
     setTagData((prevData) => {
       if (prevData[playerId]) {
@@ -81,7 +85,6 @@ function App() {
       {filteredPlayers.map((player) => {
         return (
           <Player
-            // playerInfo={player}
             position={player.position.name}
             key={player.person.id}
             id={player.person.id}

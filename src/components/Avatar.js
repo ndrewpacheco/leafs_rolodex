@@ -6,7 +6,7 @@ const Avatar = ({ id, fullName }) => {
   // add default image if player image is broken
   const addDefaultSrc = (e) => {
     e.onerror = null;
-    e.target.src = avatar;
+    e.currentTarget.src = avatar;
   };
 
   return (

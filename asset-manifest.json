@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/leafs_rolodex/static/css/main.e4e5a1a0.css",
-    "main.js": "/leafs_rolodex/static/js/main.5876b322.js",
+    "main.js": "/leafs_rolodex/static/js/main.ce2304a6.js",
     "static/media/default_avatar.jpeg": "/leafs_rolodex/static/media/default_avatar.2d6d08c3e3e64640b417.jpeg",
     "index.html": "/leafs_rolodex/index.html",
     "main.e4e5a1a0.css.map": "/leafs_rolodex/static/css/main.e4e5a1a0.css.map",
-    "main.5876b322.js.map": "/leafs_rolodex/static/js/main.5876b322.js.map"
+    "main.ce2304a6.js.map": "/leafs_rolodex/static/js/main.ce2304a6.js.map"
   },
   "entrypoints": [
     "static/css/main.e4e5a1a0.css",
-    "static/js/main.5876b322.js"
+    "static/js/main.ce2304a6.js"
   ]
 }

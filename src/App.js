@@ -81,7 +81,7 @@ function App() {
   }, [searchInputs.name, searchInputs.tag, players, tagData]);
 
   const displayPlayers = (
-    <div className='players'>
+    <div className="players">
       {filteredPlayers.map((player) => {
         return (
           <Player
@@ -97,16 +97,17 @@ function App() {
   );
 
   const displaySearchInputs = (
-    <div className='search-area'>
+    <div className="search-area">
       <SearchInput
-        type='name'
+        type="name"
         value={searchInputs.name}
         handleOnChange={(e) => {
           handleSearch(e, "name");
         }}
       />
+
       <SearchInput
-        type='tag'
+        type="tag"
         value={searchInputs.tag}
         handleOnChange={(e) => {
           handleSearch(e, "tag");
@@ -116,7 +117,7 @@ function App() {
   );
 
   return (
-    <div className='container'>
+    <div className="container">
       {displaySearchInputs}
       {displayPlayers}
     </div>

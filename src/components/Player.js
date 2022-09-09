@@ -6,6 +6,7 @@ const Player = ({ id, position, handleTag, tags }) => {
   const [isToggled, setIsToggled] = useState(false);
   const [player, setPlayer] = useState([]);
   const [stats, setStats] = useState({});
+
   const playerUrl = `https://statsapi.web.nhl.com/api/v1/people/${id}?expand=person.stats&stats=careerRegularSeason&expand=stats.team&site=en_nhlCA`;
 
   useEffect(() => {
@@ -37,6 +38,7 @@ const Player = ({ id, position, handleTag, tags }) => {
       <li>Time On Ice Per Game: {stats.timeOnIcePerGame || 0}</li>
     </>
   );
+
   const goalieStats = (
     <>
       <li>Save Percentage: {stats.savePercentage || 0}</li>
@@ -45,8 +47,9 @@ const Player = ({ id, position, handleTag, tags }) => {
       <li>Goals Against Average: {stats.goalAgainstAverage || 0}</li>
     </>
   );
+
   const seasonStats = (
-    <ul className='stats'>
+    <ul className="stats">
       {position !== "Goalie" ? playerStats : goalieStats}
     </ul>
   );
@@ -61,16 +64,16 @@ const Player = ({ id, position, handleTag, tags }) => {
   const playerForm = (
     <form onSubmit={handleSubmit}>
       <input
-        type='text'
-        className='tag-input'
-        id='tag-input'
-        placeholder='Add a tag'
+        type="text"
+        className="tag-input"
+        id="tag-input"
+        placeholder="Add a tag"
       />
     </form>
   );
 
   const playerTags = (
-    <div className='tags'>
+    <div className="tags">
       {tags && tags.length > 0 && (
         <ul>
           {tags.map((tag, idx) => (
@@ -83,7 +86,7 @@ const Player = ({ id, position, handleTag, tags }) => {
   );
 
   const playerDescription = (
-    <div className='player--info'>
+    <div className="player--info">
       <h2>{fullName}</h2>
       <ul>
         <li>Position: {position}</li>
@@ -102,9 +105,10 @@ const Player = ({ id, position, handleTag, tags }) => {
   );
 
   return (
-    <div key={id} className='player'>
+    <div key={id} className="player">
       <Avatar id={id} fullName={fullName} />
       {playerDescription}
+
       <ToggleButton
         handleToggleStats={handleToggleStats}
         isToggled={isToggled}

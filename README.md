@@ -13,9 +13,8 @@ The data used in this application is provided by the [NHL Stats API](https://sta
 
 ### Future Improvements
 
-
 Currently, when a user adds a tag to a player, the tag is not saved in memory when the page is refreshed. Future versions of the app will have stronger data storage for such details.
-
+s
 
 For people who remember what a real-life rolodex looked like, the CSS for this app will eventually be upgraded to replicate the feel of a rolodex on the screen. 
 

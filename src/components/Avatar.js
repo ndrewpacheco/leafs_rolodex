@@ -1,4 +1,4 @@
-import avatar from "../default_avatar.jpeg";
+import avatar from "../assets/default_avatar.jpeg";
 
 const Avatar = ({ id, fullName }) => {
   const playerImgUrl = `https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${id}.jpg`;

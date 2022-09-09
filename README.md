@@ -20,7 +20,7 @@ Currently, when a user adds a tag to a player, the tag is not saved in memory wh
 For people who remember what a real-life rolodex looked like, the CSS for this app will eventually be upgraded to replicate the feel of a rolodex on the screen. 
 
 
-![Rolodex](src/assets/rolodex.mp4)
+![Rolodex](https://thumbs.gfycat.com/IncompatibleSnappyCusimanse-mobile.mp4)
 
 
 *This application was initially inspired by the [Hatchways.io](https://www.hatchways.io/) 
